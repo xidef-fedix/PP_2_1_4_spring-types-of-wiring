@@ -7,10 +7,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Application {
     public static void main(String[] args) {
-        ApplicationContext applicationContext =
-                new AnnotationConfigApplicationContext(AppConfig.class);
-        KoscheiTheDeathless koscheiTheDeathless =
-                applicationContext.getBean(KoscheiTheDeathless.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        KoscheiTheDeathless koscheiTheDeathless = applicationContext.getBean(KoscheiTheDeathless.class);
         Ocean1 ocean1 = applicationContext.getBean(Ocean1.class);
         Island2 island2 = applicationContext.getBean(Island2.class);
         Wood3 wood3 = applicationContext.getBean(Wood3.class);
